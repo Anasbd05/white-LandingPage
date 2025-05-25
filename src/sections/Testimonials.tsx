@@ -15,7 +15,7 @@ export const Testimonials = () => {
           <span className="tag">Testimonials</span>
           <h2 className="section-title mt-5">What our users said</h2>
           <p className="section-desc mt-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            S            rem minus sed voluptas numquam amet.
+            rem minus sed voluptas numquam amet.
           </p>
         </div>
         <div className="flex justify-center gap-6 ">

@@ -6,10 +6,6 @@
     }
 
     .btn-primary {
-        @apply bg-black text-white
-    }
-
-    .btn-primary {
         @apply bg-transparent text-black
     }
 
