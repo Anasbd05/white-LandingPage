@@ -1,4 +1,6 @@
+"use client"
 import {pricingPlans} from "@/assets/assets"
+import {motion} from "framer-motion";
 import {Check} from "lucide-react"
 
 export const Pricing = () => {
@@ -18,7 +20,17 @@ export const Pricing = () => {
                 <h3 className={`text-lg font-bold text-black/50 ${pricing.inverse && "text-white/60"}`}>{pricing.title}</h3>
                 {pricing.popular &&
                   <div className="inline-flex text-sm px-4 py-1.5 rounded-xl border border-white/20">
-                    <span className="bg-[linear-gradient(to_right,#DD7DD7,#31CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF)] font-medium bg-clip-text text-transparent ">Popular</span>
+                    <motion.span
+                      animate={{
+                        backgroundPositionX: '-100%'
+                      }}
+                      transition={{
+                        duration: 2,
+                        repeat: Infinity,
+                        ease: "linear",
+                        repeatType: 'loop'
+                      }}
+                      className="bg-[linear-gradient(to_right,#DD7DD7,#31CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF,#31CD86,#BBCB92,#71C2EF,#3BFFFF)] font-medium bg-clip-text text-transparent [background-size:200%] ">Popular</motion.span>
                   </div>
                 }
               </div>
