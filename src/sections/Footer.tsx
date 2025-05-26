@@ -1,5 +1,5 @@
 import logo from "@/assets/logosaas.png"
-import {Facebook,Instagram,Linkedin,TwitterIcon,X,Youtube} from "lucide-react";
+import {Facebook,Instagram,Linkedin,TwitterIcon,Youtube} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
